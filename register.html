@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="icon" href="image/logo_undira.jpg">
+    <link rel="stylesheet" href="css/css/bootstrap.css"> 
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Menu -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="image/logo_undira.jpg" width="80px" height="30px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="program.html">Program Akademik</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="berita.html">Berita</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Login/Register
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="login.html">Login</a>
+                  <a class="dropdown-item" href="register.html">Register</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-8">
+            <form style="margin-top: 20px;" method="post" action="proses.php">
+              <img src="image/logo_undira.jpg" width="200px">
+              <h6>Identitas Peserta</h6>
+              <div class="row">
+                <div class="col-md-4">
+                  <label>Nama Anda</label>
+                  <input type="text" name="nama" placeholder="Nama Anda" class="form-control"></div>
+                <div class="col-md-4">
+                  <label>Agama</label>
+                  <select class="form-control" name="agama">
+                    <option value="Islam">Islam</option>
+                    <option value="Kristen">Kristen</option>
+                    <option value="Hinddu">Hinddu</option>
+                    <option value="Budha">Budha</option>
+                    <option value="Lainnya">Lainnya</option>
+                  </select>
+                </div>
+                <div class="col-md-4">
+                  <label>Nomor Handphone</label>
+                  <input type="text" name="no_hp" placeholder="Nomor Handphone" class="form-control">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <label>Domisili</label>
+                  <select class="form-control" name="domisili">
+                    <option value="Sumatera">Sumatera</option>
+                    <option value="Jawa">Jawa</option>
+                    <option value="Sulawesi">Sulawesi</option>
+                    <option value="Kalimantan">Kalimantan</option>
+                    <option value="Papua">Papua</option>
+                  </select></div>
+                <div class="col-md-4">
+                  <label>Jenis Kelamin</label>
+                  <select class="form-control" name="jenis_kelamin">
+                    <option value="Laki-Laki">Laki-Laki</option>
+                    <option value="Perempuan">Perempuan</option>
+                  </select>
+                </div>
+                <div class="col-md-4">
+                  <label>Tanggal Lahir</label>
+                  <input type="date" name="tanggal_lahir" placeholder="Tanggal Lahir" class="form-control">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <label>Tempat Lahir</label>
+                  <input type="text" name="tempat_lahir" placeholder="Tempat Lahir" class="form-control">  
+                </div>
+                <div class="col-md-4">
+                  <label>Jenis Dokumen</label>
+                  <select class="form-control" name="jenis_dokumen">
+                    <option value="SIM">SIM</option>
+                    <option value="KTP">KTP</option>
+                    <option value="Paspor">Paspor</option>
+                    <option value="Buku Nikah">Buku Nikah</option>
+                  </select>
+                </div>
+                <div class="col-md-4">
+                  <label>Nomor Dokumen</label>
+                  <input type="text" name="nomor_dokumen" placeholder="Nomor Dokumen" class="form-control">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <label>Golongan Darah</label>
+                  <input type="text" name="golongan_darah" placeholder="Golongan Darah" class="form-control">  
+                </div>
+                <div class="col-md-4">
+                  <label>Negara</label>
+                  <input type="text" name="negara" placeholder="Negara" class="form-control"> 
+                </div>
+                <div class="col-md-4">
+                  <label>Status Pernikahan</label>
+                  <select class="form-control" name="status_pernikahan">
+                    <option value="Lajang">Lajang</option>
+                    <option value="Menikah">Menikah</option>
+                    <option value="Cerai">Cerai</option>
+                    <option value="Lainnya">Lainnya</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <label>Email</label>
+                  <input type="email" name="email" placeholder="Email" class="form-control">  
+                </div>
+                <div class="col-md-4">
+                  <label>Kode Pos</label>
+                  <input type="text" name="kode_pos" placeholder="Kode Pos" class="form-control"> 
+                </div>
+                <div class="col-md-4"><label>Alamat</label>
+                  <textarea cols="10" rows="2" class="form-control" name="alamat" placeholder="Alamat"></textarea>
+                </div>
+                  <div class="col-md-4">
+                    <label>Username</label>
+                    <input type="text" name="username" placeholder="Username" class="form-control">  
+                  </div>
+                  <div class="col-md-4">
+                    <label>Password</label>
+                    <input type="password" name="password" placeholder="Password" class="form-control"> 
+                  </div>
+                  <div class="col-md-4"></div>
+                </div>
+              <br>
+              <h6>Identitas Sekolah</h6>
+              <div class="row">
+                <div class="col-md-4">
+                  <label>Nama Sekolah</label>
+                  <input type="text" name="nama_sekolah" placeholder="Nama Sekolah" class="form-control">  
+                </div>
+                <div class="col-md-4">
+                  <label>Jurusan/Program</label>
+                  <input type="text" name="jurusan" placeholder="Jurusan / Program" class="form-control"> 
+                </div>
+                <div class="col-md-4">
+                  <label>Nilai Ujian</label>
+                  <input type="text" name="nilai_ujian" placeholder="Nilai Ujian" class="form-control"> 
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <label>Tahun Lulus</label>
+                  <input type="text" name="tahun_lulus" placeholder="Tahun Lulus" class="form-control">  
+                </div>
+                <div class="col-md-4">
+                  <label>Alamat Sekolah</label>
+                  <input type="text" name="alamat_sekolah" placeholder="Alamat Sekolah" class="form-control"> 
+                </div>
+                <div class="col-md-4"></div>
+              </div><br>
+              <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4"><input type="submit" class="btn btn-info col-md-12" value="Register" name="register"></div>
+                <div class="col-md-4"></div>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-2"></div>
+      </div>
+
+    </div>
+
+    <script src="css/js/jquery.js"></script> 
+    <script src="css/js/popper.js"></script> 
+    <script src="css/js/bootstrap.js"></script> 
+</body>
+</html>

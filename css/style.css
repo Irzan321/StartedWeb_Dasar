@@ -1,0 +1,26 @@
+.irfan{
+    background-image: url("../image/background.jpg");
+    background-size: cover;
+}
+.test{
+   padding: 100px;
+}
+.gambar{
+    margin-top: 90px;
+    margin-bottom: 90px;
+    border-top-width: 10px;
+    border-left-width: 15px;
+    border-right-width: 90px;
+
+}
+
+.warnatulisan{
+    color: #0033A0;
+    margin-top:20px;
+    margin-left: 50px;
+    margin-right: 40px;
+}
+
+.back{
+    background: linear-gradient(to right, #006579, #07359a, #72405b);
+}
